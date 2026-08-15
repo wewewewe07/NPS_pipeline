@@ -100,7 +100,7 @@ docker compose exec airflow-webserver airflow dags unpause dag_daily_predict
 Mở http://localhost:8501:
 - Tab **Data Analysis**: phân phối feature, tương quan với Target
 - Tab **Model Performance**: MAE theo ngày giả lập, predicted vs actual, model registry
-- Tab **Predict NPS**: nhập tay thông tin khách hàng → nhận NPS dự đoán ngay (Promoter/Passive/Detractor)
+- Tab **Predict NPS**: upload thông tin khách hàng → nhận NPS dự đoán ngay (Promoter/Passive/Detractor)
 
 ## Ghi chú
 
