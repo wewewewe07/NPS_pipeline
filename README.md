@@ -57,12 +57,12 @@ nps-pipeline/
 ```bash
 cd nps-pipeline
 pip install -r api/requirements.txt
-python3 scripts/split_data.py
-python3 scripts/build_gold.py
-python3 scripts/correlation_analysis.py
-python3 scripts/train.py
-python3 scripts/evaluate.py
-python3 scripts/predict.py --input data/sample_new_input.csv --output data/sample_predictions.csv
+python scripts/split_data.py
+python scripts/build_gold.py
+python scripts/correlation_analysis.py
+python scripts/train.py
+python scripts/evaluate.py
+python scripts/predict.py --input data/sample_new_input.csv --output data/sample_predictions.csv
 ```
 
 Sau bước này, `models/` đã có `best_model.joblib`, `encoder.joblib`, `model_metadata.json`
