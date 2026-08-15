@@ -107,7 +107,7 @@ Mở http://localhost:8501:
 - **Không có cột ngày thật** trong dataset gốc → `dag_daily_predict` giả lập bằng cách
   rải 100 dòng test set ra ~25 ngày (`SIM_START_DATE` trong `dag_daily_predict.py`).
 - **Encoder & model chỉ fit 1 lần lúc train** (trên tập train), lưu lại và dùng chung cho
-  cả `predict.py`, FastAPI, và `dag_daily_predict` — tránh training-serving skew.
+  cả `predict.py`, FastAPI, và `dag_daily_predict` tránh training-serving skew.
 - **Test set chỉ dùng đúng 1 lần** để tính MAE cuối cùng, không được dùng để tune
   hyperparameter (việc đó dùng dev set).
 - Kết quả đã đạt được: **XGBoost**, Dev MAE 0.7104, **Test MAE 0.6887**.
